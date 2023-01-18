@@ -7,6 +7,8 @@
 # Pull base image.
 FROM ubuntu:latest
 
+RUN wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
+
 Run apt-get install eclipse-temurin -y
 
 # [Optional] Uncomment this section to install additional OS packages.
